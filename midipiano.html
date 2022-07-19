@@ -119,9 +119,9 @@ function refresh(midi) {
           //console.log(volumeInt)
           dots = '';
           for (let i = 0; i < volumeInt; i++) {
-            dots += '.';
+            dots += '-';
           }
-          dots += '------------------------------------'.substring(0,20-dots.length);
+          dots += '00000000000000000000000000'.substring(0,20-dots.length);
           if (mdata[2].length == 1) {
             dots = ' ' + dots;
           }
